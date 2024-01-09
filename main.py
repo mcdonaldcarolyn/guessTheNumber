@@ -11,3 +11,8 @@ def askForGuess():
 print('guess the number by inventwithpython')
 print()
 secretNumber = random.randint(1,100)
+print('I am thinking of a number between 1 and 100')
+
+for i in range(10):
+    print('you have {} guesses left. Take a guess.'.format(10 - i))
+    
