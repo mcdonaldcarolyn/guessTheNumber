@@ -19,4 +19,12 @@ for i in range(10):
     guess = askForGuess()
     if guess == secretNumber:
         break
-        
+    if guess < secretNumber:
+        print('your guess is too late.')
+    if guess > secretNumber:
+        print('Your guess is too high.')
+
+if guess == secretNumber:
+    print('Yay, you got it!')
+else:
+    print('Game over, the correct number was', seceretNumber)
