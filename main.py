@@ -15,4 +15,8 @@ print('I am thinking of a number between 1 and 100')
 
 for i in range(10):
     print('you have {} guesses left. Take a guess.'.format(10 - i))
-    
+
+    guess = askForGuess()
+    if guess == secretNumber:
+        break
+        
